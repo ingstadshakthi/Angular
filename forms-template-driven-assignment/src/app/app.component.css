@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 300px;
+}
+
+.form-control {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-control input,
+.form-control select {
+    height: 40px;
+    border: 1px solid #aaa;
+    margin: 0;
+    outline: none;
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+.form-control input.ng-touched.ng-invalid {
+    border: 1px solid red;
+}
+
+.highlight-error {
+    font-size: 14px;
+    color: red;
+    margin: 5px 0;
+}
+
+.form-control select option {
+    height: 40px;
+}
+
+button {
+    height: 50px;
+    border: 1px solid #aaa;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #6de390;
+}
+
+button:active {
+    scale: 0.98
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #c0fad2;
+    scale: 1;
+}
