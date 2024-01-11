@@ -1,0 +1,10 @@
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+  <input type="text" name="name" formControlName="name">
+  <input type="email" name="email" formControlName="email">
+  <select name="status" formControlName="status">
+    <option value="stable">Stable</option>
+    <option value="critical">Critical</option>
+    <option value="finished">Finished</option>
+  </select>
+  <button [disabled]="!signUpForm.valid">Submit </button>
+</form>
